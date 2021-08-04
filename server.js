@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/kombocash'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/kombocash/index.html'}),
+    res.sendFile('index.html', {root: 'dist/kombocash/'}),
 );
 
 // Start the app by listening on the default Heroku port
